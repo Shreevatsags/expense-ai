@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+# Expense-AI
 
-## Project info
+Expense-AI is a smart expense tracking and analytics web application that allows users to upload transaction data, categorize expenses, and visualize spending patterns through an interactive dashboard.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+👉 **Live Dashboard:**  
+https://id-preview--6a41524e-cb84-486e-bad9-3fb6ca881525.lovable.app/dashboard
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- CSV Upload Support – Upload bank/expense statements in CSV format.
+- Automated Expense Categorization – Classifies transactions into categories like Food, Utilities, Shopping, Income, etc.
+- Interactive Dashboard – Visual charts and summaries for better financial insights.
+- Income vs Expense Analysis – Track credits and debits clearly.
+- Real-time Insights – Instantly view spending trends and balances.
+- Clean & Responsive UI – User-friendly interface optimized for all devices.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+### Tech
 
-**Use your preferred IDE**
+* [Python (3.8 or above)](https://www.python.org/)
+* [Flask](https://flask.palletsprojects.com/)
+* [Pandas](https://pandas.pydata.org/)
+* [Chart.js](https://www.chartjs.org/)
+* [HTML, CSS, JavaScript](https://developer.mozilla.org/)
+* [Vercel](https://vercel.com/) (Deployment)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Installation Guide
 
-Follow these steps:
+To install and run this web app locally, you will need  
+[Python (3.8 or above)](https://www.python.org/) and [pip](https://pypi.org/project/pip/).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+$ git clone https://github.com/your-username/expense-ai.git
+$ cd expense-ai
+$ pip install -r requirements.txt
+$ python app.py
