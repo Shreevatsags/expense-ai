@@ -1,0 +1,313 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smart Expense Tracker - Fintech Design System */
+
+@layer base {
+  :root {
+    /* Background & Surfaces */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    
+    /* Cards & Elevated Surfaces */
+    --card: 222 47% 14%;
+    --card-foreground: 210 40% 98%;
+    
+    /* Popover */
+    --popover: 222 47% 14%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Primary - Emerald for positive/income */
+    --primary: 160 84% 39%;
+    --primary-foreground: 210 40% 98%;
+    
+    /* Secondary - Muted surface */
+    --secondary: 222 47% 18%;
+    --secondary-foreground: 210 40% 98%;
+    
+    /* Muted elements */
+    --muted: 222 47% 20%;
+    --muted-foreground: 215 20% 65%;
+    
+    /* Accent - Violet for insights/AI */
+    --accent: 263 70% 50%;
+    --accent-foreground: 210 40% 98%;
+    
+    /* Destructive - Rose for expenses */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Warning - Amber for alerts */
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 47% 11%;
+    
+    /* Success - Emerald */
+    --success: 160 84% 39%;
+    --success-foreground: 210 40% 98%;
+    
+    /* Expense color - Rose/Coral */
+    --expense: 0 84% 60%;
+    --expense-foreground: 210 40% 98%;
+    
+    /* Income color - Emerald */
+    --income: 160 84% 39%;
+    --income-foreground: 210 40% 98%;
+    
+    /* Border & Input */
+    --border: 222 47% 22%;
+    --input: 222 47% 22%;
+    --ring: 160 84% 39%;
+    
+    --radius: 0.75rem;
+    
+    /* Sidebar */
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 222 47% 14%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 222 47% 18%;
+    --sidebar-ring: 160 84% 39%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(160 84% 39%), hsl(170 80% 45%));
+    --gradient-expense: linear-gradient(135deg, hsl(0 84% 60%), hsl(15 80% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(263 70% 50%), hsl(280 70% 55%));
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 16%), hsl(222 47% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 11%) 0%, hsl(222 47% 8%) 50%, hsl(222 47% 14%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px -4px rgba(0, 0, 0, 0.5);
+    --shadow-glow-primary: 0 0 20px -5px hsl(160 84% 39% / 0.4);
+    --shadow-glow-accent: 0 0 20px -5px hsl(263 70% 50% / 0.4);
+  }
+
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    --primary: 160 84% 39%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --accent: 263 70% 50%;
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 47% 11%;
+    
+    --success: 160 84% 39%;
+    --success-foreground: 210 40% 98%;
+    
+    --expense: 0 84% 60%;
+    --expense-foreground: 210 40% 98%;
+    
+    --income: 160 84% 39%;
+    --income-foreground: 210 40% 98%;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 160 84% 39%;
+    
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 160 84% 39%;
+    
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(0 0% 100%) 50%, hsl(210 40% 96%) 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary/50;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  /* Stat Cards */
+  .stat-card {
+    @apply relative overflow-hidden rounded-xl border border-border/50 bg-card p-6 transition-all duration-300;
+    background: var(--gradient-card);
+  }
+
+  .stat-card:hover {
+    @apply border-primary/30;
+    box-shadow: var(--shadow-glow-primary);
+  }
+
+  .stat-card-income {
+    @apply stat-card border-l-4 border-l-primary;
+  }
+
+  .stat-card-expense {
+    @apply stat-card border-l-4 border-l-destructive;
+  }
+
+  .stat-card-insight {
+    @apply stat-card border-l-4 border-l-accent;
+  }
+
+  /* Chart container */
+  .chart-container {
+    @apply rounded-xl border border-border/50 bg-card p-6;
+    background: var(--gradient-card);
+  }
+
+  /* Transaction row */
+  .transaction-row {
+    @apply flex items-center justify-between p-4 rounded-lg transition-colors hover:bg-secondary/50;
+  }
+
+  /* Category badge */
+  .category-badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium;
+  }
+
+  /* Glow effect */
+  .glow-primary {
+    box-shadow: var(--shadow-glow-primary);
+  }
+
+  .glow-accent {
+    box-shadow: var(--shadow-glow-accent);
+  }
+
+  /* Animated gradient border */
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(var(--card), var(--card)) padding-box,
+                var(--gradient-primary) border-box;
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+  }
+
+  /* Pulse animation for alerts */
+  .pulse-warning {
+    animation: pulse-warning 2s infinite;
+  }
+
+  @keyframes pulse-warning {
+    0%, 100% {
+      box-shadow: 0 0 0 0 hsl(38 92% 50% / 0.4);
+    }
+    50% {
+      box-shadow: 0 0 0 8px hsl(38 92% 50% / 0);
+    }
+  }
+}
+
+@layer utilities {
+  /* Text gradients */
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+
+  /* Glass effect */
+  .glass {
+    @apply bg-card/80 backdrop-blur-xl;
+  }
+
+  /* Fade in animation */
+  .fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Slide up animation */
+  .slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Number counter animation */
+  .number-animate {
+    animation: numberPop 0.5s ease-out;
+  }
+
+  @keyframes numberPop {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
