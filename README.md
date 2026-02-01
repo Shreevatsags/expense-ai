@@ -30,7 +30,23 @@ https://id-preview--6a41524e-cb84-486e-bad9-3fb6ca881525.lovable.app/dashboard
 ---
 ## Screenshots
 
-###
+### Main Dashboard Page
+![Screenshot 1]().
+
+### Upload Bank Statement Page
+![Screenshot 2]().
+
+### Spending Trends Page
+![Screenshot 3]()>
+
+### AI Insights Page
+![Screenshot 4]().
+
+### Recent Transactions Page
+![Screenshot 5]().
+
+### Spending by Category Page
+![Screenshot 6]().
 ---
 
 ## Installation Guide
@@ -46,4 +62,6 @@ $ python app.py
 ```
 ---
 
+## Developed By
 
+Shreevatsa G S
