@@ -3,7 +3,7 @@
 Expense-AI is a smart expense tracking and analytics web application that allows users to upload transaction data, categorize expenses, and visualize spending patterns through an interactive dashboard.
 
 👉 **Live Dashboard:**  
-https://id-preview--6a41524e-cb84-486e-bad9-3fb6ca881525.lovable.app/dashboard
+https://expense-ai-gs.vercel.app/
 
 ---
 
