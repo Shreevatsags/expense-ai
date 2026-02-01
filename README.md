@@ -31,22 +31,23 @@ https://id-preview--6a41524e-cb84-486e-bad9-3fb6ca881525.lovable.app/dashboard
 ## Screenshots
 
 ### Main Dashboard Page
-![Screenshot 1]().
+![Screenshot 1](https://github.com/Shreevatsags/expense-ai/blob/main/screenshots/Screenshot%202026-02-01%20203547.png).
 
 ### Upload Bank Statement Page
-![Screenshot 2]().
+![Screenshot 2](https://github.com/Shreevatsags/expense-ai/blob/main/screenshots/Screenshot%202026-02-01%20200454.png).
 
 ### Spending Trends Page
-![Screenshot 3]()>
+![Screenshot 3](https://github.com/Shreevatsags/expense-ai/blob/main/screenshots/Screenshot%202026-02-01%20200524.png).
 
 ### AI Insights Page
-![Screenshot 4]().
+![Screenshot 4](https://github.com/Shreevatsags/expense-ai/blob/main/screenshots/Screenshot%202026-02-01%20200530.png).
 
 ### Recent Transactions Page
-![Screenshot 5]().
+![Screenshot 5](https://github.com/Shreevatsags/expense-ai/blob/main/screenshots/Screenshot%202026-02-01%20200536.png).
 
 ### Spending by Category Page
-![Screenshot 6]().
+![Screenshot 6](https://github.com/Shreevatsags/expense-ai/blob/main/screenshots/Screenshot%202026-02-01%20200542.png).
+
 ---
 
 ## Installation Guide
