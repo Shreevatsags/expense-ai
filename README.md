@@ -47,6 +47,7 @@ https://id-preview--6a41524e-cb84-486e-bad9-3fb6ca881525.lovable.app/dashboard
 
 ### Spending by Category Page
 ![Screenshot 6](https://github.com/Shreevatsags/expense-ai/blob/main/screenshots/Screenshot%202026-02-01%20200542.png).
+
 ---
 
 ## Installation Guide
