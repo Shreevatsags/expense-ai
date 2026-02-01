@@ -28,6 +28,10 @@ https://id-preview--6a41524e-cb84-486e-bad9-3fb6ca881525.lovable.app/dashboard
 * [Vercel](https://vercel.com/) (Deployment)
 
 ---
+## Screenshots
+
+###
+---
 
 ## Installation Guide
 
@@ -35,7 +39,11 @@ To install and run this web app locally, you will need
 [Python (3.8 or above)](https://www.python.org/) and [pip](https://pypi.org/project/pip/).
 
 ```sh
-$ git clone https://github.com/your-username/expense-ai.git
+$ git clone https://github.com/Shreevatsags/expense-ai.git
 $ cd expense-ai
 $ pip install -r requirements.txt
 $ python app.py
+```
+---
+
+
